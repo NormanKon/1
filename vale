@@ -1,0 +1,16 @@
+StylesPath = .github/styles
+
+MinAlertLevel = suggestion
+Vocab = Base
+
+Packages = Google
+
+[*.md]
+BasedOnStyles = Vale, Google
+BlockIgnores = (\((http.*://|\.\/|\/).*?\)), \
+{\:.*?}
+TokenIgnores = {%.*?%}, \
+{{.*?}}, \
+(?:)(/[(A-Za-z0-9)(\055/)(_)]*/), \
+({\#.*})
+SkippedScopes = code
